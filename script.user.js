@@ -50,6 +50,8 @@ var hornInterval = 10; //How often, in milliseconds, the horn should blare. Defa
 var resetTriple = false; //If false, 3 clicks = 1 sound, 4 clicks = 2 sounds 5 clicks = 3 sounds, etc. If true, 3 clicks = 1 sound, 6 clicks = 2 sounds, 9 clicks = 3 sounds, etc. False in original script
 var stackTriple = true; //Default true.  
 var stackHorn = true; //Default false in original script. If this is true, the horn sounds will stack 
+var changeFont = true; //Comic sans EVERYTHING
+
 //KXz1JN9SKKM
 
 
@@ -195,7 +197,9 @@ window.addEventListener("contextmenu", function(evt) {
 });
 
 /* ( ͡° ͜ʖ ͡°) MLG copy-and-paste solutions from the internet */
-var css = document.createElement("style");
-css.type = "text/css";
-css.innerHTML = "* { font-family: \"Comic Sans MS\" !important; }";
-document.body.appendChild(css);
+if (changeFont) {
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = "* { font-family: \"Comic Sans MS\" !important; }";
+    document.body.appendChild(css);
+}
