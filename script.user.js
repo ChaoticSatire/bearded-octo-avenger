@@ -48,9 +48,8 @@ var soundTriple = true; //When you triple click
 var soundDamn = true; //When you right click 
 var hornInterval = 10; //How often, in milliseconds, the horn should blare. Default is 50
 var resetTriple = false; //If false, 3 clicks = 1 sound, 4 clicks = 2 sounds 5 clicks = 3 sounds, etc. If true, 3 clicks = 1 sound, 6 clicks = 2 sounds, 9 clicks = 3 sounds, etc. False in original script
-var stackTriple = true; //Default true in original script.  
+var stackTriple = true; //Default true.  
 var stackHorn = true; //Default false in original script. If this is true, the horn sounds will stack 
-var stackDamn = true; //Default false in original script
 var changeFont = true; //Comic sans EVERYTHING
 
 //KXz1JN9SKKM
